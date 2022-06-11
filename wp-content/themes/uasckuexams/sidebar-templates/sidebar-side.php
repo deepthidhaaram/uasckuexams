@@ -1,0 +1,27 @@
+<?php
+/**
+ * The right sidebar containing the main widget area
+ *
+ * @package Understrap
+ */
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+if ( ! is_active_sidebar( 'side-sidebar' ) ) {
+	return;
+}
+
+// when both sidebars turned on reduce col size to 3 from 4.
+$sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
+?>
+
+<?php if ( 'both' === $sidebar_pos ) : ?>
+	<div class="col-md-3 widget-area" id="side-sidebar">
+<?php else : ?>
+	<div class="col-md-3 widget-area" id="side-sidebar">
+	
+<?php endif; ?>
+<?php dynamic_sidebar( 'side-sidebar' ); ?>
+
+</div><!-- #right-sidebar -->
