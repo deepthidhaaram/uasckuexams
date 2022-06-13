@@ -167,11 +167,23 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 				'after_title'   => '',
 			)
 		);
+		
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer Down', 'understrap' ),
+				'id'            => 'footerdown-sidebar',
+				'description'   => __( 'footerdown sidebar widget area', 'understrap' ),
+				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</aside>',
+				'before_title'  => '<h5 class="widget-title4">',
+				'after_title'   => '</h5>',
+			)
+				);
 
 		register_sidebar(
 			array(
 				'name'          => __( 'Top Full', 'understrap' ),
-				'id'            => 'statichero',
+				'id'            => 'topfull',
 				'description'   => __( 'Full top widget with dynamic grid', 'understrap' ),
 				'before_widget' => '<div id="%1$s" class="static-hero-widget %2$s dynamic-classes">',
 				'after_widget'  => '</div><!-- .static-hero-widget -->',

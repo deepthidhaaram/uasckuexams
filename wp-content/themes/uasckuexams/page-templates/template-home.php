@@ -15,11 +15,13 @@ get_header();
 ?>
 
 
+
 <div class="row">
     <div class="col-md-8">
     <?php
 echo do_shortcode('[smartslider3 slider="3"]');
 ?>
+
 </div>
 
 
@@ -40,7 +42,6 @@ echo do_shortcode('[smartslider3 slider="3"]');
 <?php
 echo do_shortcode('[rtbs name="211"]');
 ?>
-
 
 
 <?php

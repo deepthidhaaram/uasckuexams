@@ -191,7 +191,12 @@ a{
     color: rgba(0,0,0,.5);
  
 }
-  
+.bg-primary,h6{
+margin-bottom:0;
+padding:2%;
+background-color: #2593d8!important;
+color:white;
+}
 </style>
 	
 </head>
@@ -201,7 +206,7 @@ a{
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	
+	<?php get_template_part( 'widgets',  'Top Full' ); ?> 
 	<nav id="site-navigation" class="secondary">
 			<!-- <?php esc_html_e( 'Secondary Menu', 'uasckuexams' ); ?> -->
 			<?php
@@ -214,6 +219,7 @@ a{
 			?>
 		</nav>
 
+    
 <img src="https://existing.dev.cc/wp-content/uploads/2022/06/cropped-cropped-cropped-cropped-cropped-uascku-header-png-1-1.png" alt="logo" width="100%" height="50%">
 
 

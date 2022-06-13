@@ -16,6 +16,7 @@ defined( 'ABSPATH' ) || exit;
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 
+<?php dynamic_sidebar( 'footerdown-sidebar' ); ?>
 <?php wp_footer(); ?>
 
 </body>
